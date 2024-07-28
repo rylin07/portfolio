@@ -1,8 +1,8 @@
 {
-  "name": "simplefolio",
+  "name": "portfolio",
   "version": "1.0.1",
   "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "description": "portfolio",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
@@ -13,14 +13,18 @@
     "url": "git+https://github.com/cobiwave/simplefolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Ryan Lin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobiwave/simplefolio/issues"
+    "url": "https://github.com/rylin07/portfolio"
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
-  "devDependencies": {
+  "homepage": "https://github.com/rylin07/portfolio",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }, "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
+    "gh-pages": "^6.1.1",
     "parcel": "^2.8.2",
     "prettier": "^2.8.1"
   },
